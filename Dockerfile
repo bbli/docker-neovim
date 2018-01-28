@@ -25,3 +25,5 @@ COPY /.vim /root/.vim
 COPY /dotfiles /root/dotfiles
 COPY /.fzf /root/.fzf
 
+# So we can start the container in the directory you mounted
+WORKDIR /mnt 
