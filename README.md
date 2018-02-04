@@ -1,6 +1,5 @@
 # Installation Methods
 
-![Docker Hub](https://img.shields.io/badge/docker-erroneousboat%2Fneovim-blue.svg)](https://registry.hub.docker.com/u/erroneousboat/neovim/)
 ## Requirements
 Docker
 
