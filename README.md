@@ -13,7 +13,7 @@ If you want to use neovim with my customizations(see my dotfiles on github), the
 Note that neovim will have whatever plugins I was using at buildtime of the image.
 
 ## Customized Neovim
-If you want to build the neovim docker container with your own vim plugins/colorschemes, and dotfiles, then replace the `.vim`, `.fzf` and `dotfiles` directory with your own, and run 
+If you want to use your own dotfiles, then run `nvim-server /path_to_dotfiles`, and update plugins inside neovim accordingly.
 
 The purpose of the `.vim` folder is so you don't need to download your plugins when you enter the container. The `.vim` folder also holds your colorschemes
 
@@ -23,7 +23,7 @@ Because I did not want to build fzf during the docker build(as that would requir
 Finally, the `dotfiles` folder is for your `.vimrc` and `.bashrc`, `.gitconfig` and any other configuration files for vim or command line utilities, such as git.
 
 ## Building Customized Neovim
-If you want your own customized neovim, but don't want to mount your dotfiles everytime, you can build a new docker image by replacing the `.vim` and `dotfiles folders` in this repository with your own and then run 
+If you want your own customized neovim, but don't want to mount your dotfiles everytime, you can build a new docker image by replacing the `.vim` and `dotfiles` folder in this repository with your own and then run 
 ```
 docker build -t YOUR_NAME_FOR_THIS_CONTAINER .
 ```
